@@ -1,0 +1,88 @@
+/*
+* Versions to ensure that all modules will have same version of libraries
+*/
+
+def versions = [:]
+versions.android_plugin = "4.0.0" // https://developer.android.com/studio/releases/gradle-plugin
+versions.android_core = "1.3.0" // https://developer.android.com/jetpack/androidx/versions
+versions.appcompat = "1.1.0" // https://developer.android.com/jetpack/androidx/versions
+versions.constraint_layout = "1.1.3" // https://developer.android.com/jetpack/androidx/versions
+versions.dagger = "2.28" // https://github.com/google/dagger/releases
+versions.espresso = "3.2.0" // https://developer.android.com/jetpack/androidx/releases/test
+versions.fragment = "1.2.5" // https://developer.android.com/jetpack/androidx/versions
+versions.kotlin = "1.3.72" // check through android FILE > SETTINGS > LANGUAGE AND FRAMEWORK > KOTLIN UPDATES
+versions.junit_core = "4.12" // https://developer.android.com/jetpack/androidx/releases/test
+versions.junit_ext = "1.1.1" // https://developer.android.com/jetpack/androidx/releases/test
+versions.leak_canary = "2.4" // https://github.com/square/leakcanary/releases
+versions.material_components = "1.1.0" // https://github.com/square/leakcanary/releases
+versions.recycler_view = "1.1.0" // https://developer.android.com/jetpack/androidx/versions
+versions.retrofit = "2.9.0" // https://github.com/square/retrofit/releases
+versions.room = "2.2.5" // https://developer.android.com/jetpack/androidx/versions
+versions.timber = "4.7.1"  // https://github.com/JakeWharton/timber/releases
+versions.view_pager2 = "1.0.0" // https://developer.android.com/jetpack/androidx/versions
+
+def dependencies = [:]
+def android = [:]
+android.appcompat = "androidx.appcompat:appcompat:$versions.appcompat"
+android.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.constraint_layout"
+android.core = "androidx.core:core-ktx:$versions.android_core"
+android.fragment = "androidx.fragment:fragment-ktx:$versions.fragment"
+android.plugin = "com.android.tools.build:gradle:$versions.android_plugin"
+android.recycler_view = "androidx.recyclerview:recyclerview:$versions.recycler_view"
+android.view_pager2 = "androidx.viewpager2:viewpager2:$versions.view_pager2"
+dependencies.android = android
+
+def dagger = [:]
+dagger.android = "com.google.dagger:dagger-android:$versions.dagger"
+dagger.android_processor = "com.google.dagger:dagger-android-processor:$versions.dagger"
+dagger.android_support = "com.google.dagger:dagger-android-support:$versions.dagger"
+dagger.compiler = "com.google.dagger:dagger-compiler:$versions.dagger"
+dagger.runtime = "com.google.dagger:dagger:$versions.dagger"
+dependencies.dagger = dagger
+
+def design = [:]
+design.material_components = "com.google.android.material:material:$versions.material_components"
+dependencies.design = design
+
+def kotlin = [:]
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+kotlin.sdklib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+dependencies.kotlin = kotlin
+
+def log = [:]
+log.leak_canary = "com.squareup.leakcanary:leakcanary-android:$versions.leak_canary"
+log.timber = "com.jakewharton.timber:timber:$versions.timber"
+dependencies.log = log
+
+def retrofit = [:]
+retrofit.core = "com.squareup.retrofit2:retrofit:$versions.retrofit"
+retrofit.gson_converter = "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+dependencies.retrofit = retrofit
+
+def room = [:]
+room.compiler = "androidx.room:room-compiler:$versions.room"
+room.ktx = "androidx.room:room-ktx:$versions.room"
+room.runtime = "androidx.room:room-runtime:$versions.room"
+dependencies.room = room
+
+def test = [:]
+test.espresso = "androidx.test.espresso:espresso-core:$versions.espresso"
+test.junit_core = "junit:junit:$versions.junit_core"
+test.junit_ext = "androidx.test.ext:junit:$versions.junit_ext"
+dependencies.test = test
+
+ext.deps = dependencies
+
+def build_config = [:]
+build_config.min_sdk = 21
+build_config.target_sdk = 30
+build_config.compile_sdk = 30
+build_config.build_tools = "30.0.0"
+ext.build_config = build_config
+
+static def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+}
+
+ext.addRepos = this.&addRepos

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--spacing-->
+    <dimen name="space_component_small">4dp</dimen>
+    <dimen name="space_grid_small">8dp</dimen>
+    <dimen name="space_component_medium">12dp</dimen>
+    <dimen name="space_grid_medium">16dp</dimen>
+    <dimen name="space_component_large">20dp</dimen>
+    <dimen name="space_grid_large">24dp</dimen>
+    <dimen name="space_component_xlarge">28dp</dimen>
+    <dimen name="space_grid_xlarge">32dp</dimen>
+    <dimen name="space_component_xxlarge">36dp</dimen>
+    <dimen name="space_grid_xxlarge">40dp</dimen>
+    <dimen name="space_grid_xxxlarge">48dp</dimen>
+
+    <!--text-->
+    <dimen name="text_overline">10sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_body_small">14sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_subtitle_small">14sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="title_xsmall">20sp</dimen>
+    <dimen name="title_small">24sp</dimen>
+    <dimen name="title_medium">28sp</dimen>
+    <dimen name="title_large">34sp</dimen>
+    <dimen name="title_xlarge">38sp</dimen>
+
+    <!--icon-->
+    <dimen name="icon_xsmall">18dp</dimen>
+    <dimen name="icon_small">24dp</dimen>
+    <dimen name="icon_semi_medium">32dp</dimen>
+    <dimen name="icon_medium">36dp</dimen>
+    <dimen name="icon_large">40dp</dimen>
+    <dimen name="icon_xlarge">48dp</dimen>
+
+    <!--elevation-->
+    <dimen name="elevation_card">1dp</dimen>
+    <dimen name="elevation_toolbar">4dp</dimen>
+    <dimen name="elevation_floating_button">6dp</dimen>
+    <dimen name="elevation_card_selected">8dp</dimen>
+    <dimen name="elevation_bottom_bar">8dp</dimen>
+
+    <!--radius-->
+    <dimen name="radius_small">2dp</dimen>
+    <dimen name="radius_medium">5dp</dimen>
+    <dimen name="radius_large">8dp</dimen>
+
+    <!--other-->
+</resources>

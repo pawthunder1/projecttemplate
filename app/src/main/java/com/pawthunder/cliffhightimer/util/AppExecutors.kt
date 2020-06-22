@@ -1,4 +1,4 @@
-package com.pawthunder.projecttemplate.util
+package com.pawthunder.cliffhightimer.util
 
 import android.os.Handler
 import android.os.Looper

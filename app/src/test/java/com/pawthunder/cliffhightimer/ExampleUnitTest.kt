@@ -1,4 +1,4 @@
-package com.pawthunder.projecttemplate
+package com.pawthunder.cliffhightimer
 
 import org.junit.Test
 

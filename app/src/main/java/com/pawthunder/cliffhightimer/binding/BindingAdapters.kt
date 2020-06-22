@@ -1,4 +1,4 @@
-package com.pawthunder.projecttemplate.binding
+package com.pawthunder.cliffhightimer.binding
 
 import android.view.View
 import android.widget.TextView

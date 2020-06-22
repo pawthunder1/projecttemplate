@@ -1,4 +1,4 @@
-package com.pawthunder.projecttemplate.repository
+package com.pawthunder.cliffhightimer.repository
 
 // FIXME: uncomment if it's using database with retrofit
 /*import androidx.lifecycle.MutableLiveData

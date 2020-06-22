@@ -1,7 +1,7 @@
-package com.pawthunder.projecttemplate.di
+package com.pawthunder.cliffhightimer.di
 
 import androidx.lifecycle.ViewModelProvider
-import com.pawthunder.projecttemplate.util.ViewModelFactory
+import com.pawthunder.cliffhightimer.util.ViewModelFactory
 import dagger.Binds
 import dagger.Module
 

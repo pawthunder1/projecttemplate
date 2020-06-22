@@ -1,9 +1,9 @@
-package com.pawthunder.projecttemplate.ui
+package com.pawthunder.cliffhightimer.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.appbar.MaterialToolbar
-import com.pawthunder.projecttemplate.R
+import com.pawthunder.cliffhightimer.R
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector

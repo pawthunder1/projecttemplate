@@ -1,4 +1,4 @@
-package com.pawthunder.projecttemplate.util
+package com.pawthunder.cliffhightimer.util
 
 //FIXME: uncomment or remove depends if need to check for online state
 /*import android.content.Context

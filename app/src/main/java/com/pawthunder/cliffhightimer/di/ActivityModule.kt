@@ -1,6 +1,6 @@
-package com.pawthunder.projecttemplate.di
+package com.pawthunder.cliffhightimer.di
 
-import com.pawthunder.projecttemplate.ui.MainActivity
+import com.pawthunder.cliffhightimer.ui.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

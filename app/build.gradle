@@ -8,7 +8,7 @@ android {
     buildToolsVersion build_config.build_tools
 
     defaultConfig {
-        applicationId "com.pawthunder.projecttemplate" // TODO change name
+        applicationId "com.pawthunder.cliffhightimer"
         minSdkVersion build_config.min_sdk
         targetSdkVersion build_config.target_sdk
         versionCode 1

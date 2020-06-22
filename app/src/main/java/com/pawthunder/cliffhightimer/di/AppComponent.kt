@@ -1,7 +1,7 @@
-package com.pawthunder.projecttemplate.di
+package com.pawthunder.cliffhightimer.di
 
 import android.app.Application
-import com.pawthunder.projecttemplate.PawthunderApp
+import com.pawthunder.cliffhightimer.PawthunderApp
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule

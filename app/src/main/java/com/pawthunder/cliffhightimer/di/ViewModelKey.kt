@@ -1,4 +1,4 @@
-package com.pawthunder.projecttemplate.di
+package com.pawthunder.cliffhightimer.di
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey
